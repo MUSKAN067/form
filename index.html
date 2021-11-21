@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- custom css file link  -->
+    <title>REg2 FORM</title>
+    <link rel="stylesheet" href="regform.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="card-container">
+
+        <div class="front">
+            <div class="image">
+                <img src="log.png" alt="">
+                <img src="logo small-web-nev.png" alt="">
+            </div>
+            
+            <div class="flexbox">
+                <div class="box">
+                   
+
+                    <h1 class="card-holder-name">Registration Form</h1>
+                    <p class="submitmsg">thanks for submitting form</p>
+                </div>
+              
+            </div>
+        </div>
+
+   
+
+    </div>
+
+    <form action="index.php"  method="post">
+       <div class="inputBox">
+            <span>Email ID</span>
+            <input type="text"  name="email id"  id="email id"     class="email-ID-input">
+        </div>
+
+        <div class="inputBox">
+            <span>Name</span>
+            <input type="text" name="name"  id="name"   class="name-input">
+        </div>
+
+        <div class="inputBox">
+            <span>Contact No</span>
+            <input type="number" name="contact no"  id="contact no"  class="contact-no-input">
+        </div>
+
+        <div class="flexbox">
+
+        <!-- <div class="flexbox">
+            <div class="inputBox">
+                <span>Course</span>
+                <select name="" id="" class="course-input">
+                    <option value="month" selected disabled>-Select  Course Type-</option>
+                    
+                <option value="B.tech">B.tech</option>
+                <option value="Diploma">Diploma</option>
+                <option value="B.Ed">B.Ed</option>
+                <option value="ITI">ITI</option>
+                </select>
+            </div>
+
+            <div class="inputBox">
+                <span>Session</span>
+                <select name="" id="" class="year-input">
+                    <option value="year" selected disabled>-select session type-</option>
+                <option value="21-25">2021 - 2025</option>
+                    <option value="20-24">2020 - 2024</option>
+                    <option value="19-23">2019 - 2023</option>
+                    <option value="18-22">2018 - 2022</option>
+                    <option value="17-21">2017 - 2021</option>
+                    <option value="16-20">2016 - 2020</option>
+                    <option value="15-19">2015 - 2019</option>
+
+                </select>
+            </div> -->
+
+            <div class="inputBox">
+                <span>Course</span>
+                <input type="text" name="course"  id="course"  class="registration-input">
+            </div>
+
+            <div class="inputBox">
+                <span>Session</span>
+                <input type="number" name="session"  id="session"  class="registration-input">
+            </div>
+            
+
+            <div class="inputBox">
+                <span>Registration ID</span>
+                <input type="number" maxlength="16" class="registration-input">
+            </div>
+
+        </div>
+        <input type="submit" value="Register" class="submit-btn">
+    </form>
+
+</div>    
+    
+
+
+
+
+
+<!-- <script>
+
+document.querySelector('.card-number-input').oninput = () =>{
+    document.querySelector('.card-number-box').innerText = document.querySelector('.card-number-input').value;
+}
+
+document.querySelector('.card-holder-input').oninput = () =>{
+    document.querySelector('.card-holder-name').innerText = document.querySelector('.card-holder-input').value;
+}
+
+document.querySelector('.month-input').oninput = () =>{
+    document.querySelector('.exp-month').innerText = document.querySelector('.month-input').value;
+}
+
+document.querySelector('.year-input').oninput = () =>{
+    document.querySelector('.exp-year').innerText = document.querySelector('.year-input').value;
+}
+
+document.querySelector('.cvv-input').onmouseenter = () =>{
+    document.querySelector('.front').style.transform = 'perspective(1000px) rotateY(-180deg)';
+    document.querySelector('.back').style.transform = 'perspective(1000px) rotateY(0deg)';
+}
+
+document.querySelector('.cvv-input').onmouseleave = () =>{
+    document.querySelector('.front').style.transform = 'perspective(1000px) rotateY(0deg)';
+    document.querySelector('.back').style.transform = 'perspective(1000px) rotateY(180deg)';
+}
+
+document.querySelector('.cvv-input').oninput = () =>{
+    document.querySelector('.cvv-box').innerText = document.querySelector('.cvv-input').value;
+}
+
+</script> -->
+
+
+
+</body>
+</html>
